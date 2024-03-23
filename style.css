@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, rgb(14, 14, 14), rgb(23, 10, 66));
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    background-color: rgba(8, 154, 118, 0.375);
+    border-radius: 25px;
+}
+
+.hourDiv, .minDiv, .secDiv {
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.hourDiv h1, .hourDiv p  {
+    color: rgba(255, 0, 0, 0.559);
+}
+
+.comma {
+    font-size: 50px;
+    margin: 0 10px;
+}
+
+.minDiv h1, .minDiv p  {
+    color: rgba(228, 11, 188, 0.559);
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        margin-top: 25px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    
+    .comma {
+        font-size: 40px;
+        margin: 0 7px;
+    }
+    
+    .hourDiv, .minDiv, .secDiv {
+        margin: 0 7px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .container {
+        margin-top: 20px;
+        padding: 15px 5px;
+        border-radius: 15px;
+    }
+    
+    .comma {
+        font-size: 30px;
+    }
+    
+    .hourDiv, .minDiv, .secDiv {
+        margin: 0 5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 225px) {
+    .container {
+        margin-top: 20px;
+        padding: 15px 5px;
+        border-radius: 10px;
+    }
+    
+    .comma {
+        font-size: 20px;
+    }
+    
+    .hourDiv, .minDiv, .secDiv {
+        margin: 0 1px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 150px) {
+    body {
+        display: none;
+    }
+}
